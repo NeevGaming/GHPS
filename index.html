@@ -10,13 +10,17 @@
 </head>
 
 <body>
+
+    <a href="#logo" ><img src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-22-512.png" id="scrolltotop" width="50px" height="50px" style="margin-left: 1280px; margin-top: 570px;"></a>
+    
+
     <div style="display: flex;">
-        <img src="https://ghpsvv.com/site/images/logo.png" width="300px" height="50px">
+        <img id="logo" src="https://ghpsvv.com/site/images/logo.png" width="300px" height="80px">
         <nav>
             <ul>
-                <li>
+               <a href="index.html"> <li>
                     Home
-                </li>
+                </li></a>
                 <a href="#aboutme">
                     <li  id="about">
                         About Us
@@ -34,9 +38,9 @@
                 <li>
                     Admission
                 </li>
-                <li>
+               <a href="#support"><li>
                     Support
-                </li>
+                </li></a> 
             </ul>
         </nav>
     </div>
@@ -125,8 +129,32 @@ Olympic size swimming pool, plush conference room with modern technology, and in
            </p> 
         </div>
 
-        
 
+            <div id="support" class="container" style="width: 1310px;  height: 600px;">
+                <form action="action_page.php" style="transform: translateY(35px);">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+            </div>
+
+        
 </body>
 
 </html>
