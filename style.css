@@ -2,6 +2,16 @@ body {
   background-image: url("https://media.istockphoto.com/photos/grunge-red-brick-wall-texture-background-picture-id1145460822?k=20&m=1145460822&s=612x612&w=0&h=kNOIyVmPyL4SqQeNZFin3CD9s8c_f-u9b7ABhiy1qD8=");
   /* cursor: auto; */
 }
+@keyframes nav
+{
+  0%{
+    font-size: 15px;
+  }
+  100%
+  {
+    font-size: 20px;
+  }
+}
 
 nav {
   flex: 1;
@@ -13,12 +23,15 @@ li {
   list-style: none;
   margin-right: 50px;
   color: white;
-
+  
 }
 
 li:hover {
   color: blue;
   cursor: pointer;
+  animation-name: nav;
+  animation-duration: 0.2s;
+  font-size: 20px;
 }
 
 .slideshow-container {
@@ -106,6 +119,7 @@ li:hover {
     opacity: 1
   }
 }
+
 
 .slideshow {
   cursor: pointer;
